@@ -157,23 +157,26 @@ cd mobile && flutter test
 
 ## Screenshots
 
-The repository does not ship screenshots yet; capture the set below into `docs/screenshots/` (exact filenames were chosen so the images can simply be dropped in).
+Real captures shipped in the repository: a phone-size viewport for the Flutter client and a
+desktop viewport for the admin panel; the Postman trio answers live against the local API.
 
-| File | Captures |
+| Login | Rooms | Room detail |
+| --- | --- | --- |
+| ![Login](docs/screenshots/login.png) | ![Rooms](docs/screenshots/rooms.png) | ![Room detail](docs/screenshots/room-detail.png) |
+
+| Booking sheet | My bookings | Profile |
+| --- | --- | --- |
+| ![Booking sheet](docs/screenshots/booking-sheet.png) | ![My bookings](docs/screenshots/my-bookings.png) | ![Profile](docs/screenshots/profile.png) |
+
+| Availability timeline | Admin panel |
 | --- | --- |
-| `login.png` | Login screen of the mobile app |
-| `rooms.png` | Rooms tab with the room grid |
-| `room-detail.png` | Room detail with the day timeline |
-| `booking-sheet.png` | Booking sheet mid-form |
-| `my-bookings.png` | My bookings tab |
-| `profile.png` | Profile tab with theme switch |
-| `postman-rooms.png` | Postman: `GET /api/rooms` response |
-| `postman-booking.png` | Postman: `POST /api/bookings` response |
-| `postman-conflict.png` | Postman: 422 conflict response |
-| `admin-panel.png` | Admin web panel booking review |
+| ![Availability timeline](docs/screenshots/room-detail-timeline.png) | ![Admin panel](docs/screenshots/admin-panel.png) |
 
-Once the captures exist, add a gallery section (the same two-column table style used in
-[`flutter-meal-student`](https://github.com/SRUN-Sochettra/flutter-meal-student)).
+### Backend API in Postman
+
+| `GET /api/rooms` — 200 OK | `POST /api/bookings` — 201 Created | Overlap rejected — 409 Conflict |
+| --- | --- | --- |
+| ![Rooms response](docs/screenshots/postman-rooms.png) | ![Booking created](docs/screenshots/postman-booking.png) | ![Conflict](docs/screenshots/postman-conflict.png) |
 
 ## Notes and limitations
 

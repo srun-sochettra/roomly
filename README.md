@@ -38,7 +38,8 @@ erDiagram
         string email UK "unique"
         string password
         string role "student | admin"
-        timestamps created_at, updated_at
+        datetime created_at
+        datetime updated_at
     }
 
     ROOMS {
@@ -50,7 +51,8 @@ erDiagram
         string image_url "nullable"
         text description "nullable"
         boolean is_active "default true"
-        timestamps created_at, updated_at
+        datetime created_at
+        datetime updated_at
     }
 
     BOOKINGS {
@@ -63,7 +65,8 @@ erDiagram
         string purpose "nullable"
         string status "pending | approved | rejected | cancelled | expired"
         string admin_note "nullable"
-        timestamps created_at, updated_at
+        datetime created_at
+        datetime updated_at
     }
 ```
 
@@ -169,15 +172,8 @@ The repository does not ship screenshots yet; capture the set below into `docs/s
 | `postman-conflict.png` | Postman: 422 conflict response |
 | `admin-panel.png` | Admin web panel booking review |
 
-```html
-<!-- Once the captures exist, reveal this table in the README:
-| Login | Rooms | Room detail |
-| --- | --- | --- |
-| ![Login](docs/screenshots/login.png) | ![Rooms](docs/screenshots/rooms.png) | ![Room detail](docs/screenshots/room-detail.png) |
-| Booking sheet | My bookings | Admin panel |
-| ![Booking sheet](docs/screenshots/booking-sheet.png) | ![My bookings](docs/screenshots/my-bookings.png) | ![Admin panel](docs/screenshots/admin-panel.png) |
--->
-```
+Once the captures exist, add a gallery section (the same two-column table style used in
+[`flutter-meal-student`](https://github.com/SRUN-Sochettra/flutter-meal-student)).
 
 ## Notes and limitations
 
